@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact - Sevel Europe</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<style>
+
+.contact-section{
+padding:80px 10%;
+max-width:1200px;
+margin:auto;
+}
+
+.contact-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.contact-title h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.contact-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+}
+
+.contact-info p{
+margin:12px 0;
+font-size:16px;
+}
+
+.contact-form{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:5px;
+font-size:14px;
+}
+
+.contact-form textarea{
+height:140px;
+resize:none;
+}
+
+.contact-form button{
+background:#ffd000;
+border:none;
+padding:14px 25px;
+font-weight:bold;
+cursor:pointer;
+border-radius:5px;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+transform:scale(1.05);
+}
+
+@media(max-width:900px){
+
+.contact-container{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SUCCESS POPUP -->
+<div id="form-message" class="form-message">
+Message sent successfully!
+</div>
+
+<header>
+<div class="container nav">
+
+<img src="images/sevel.png" class="logo">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Showcases</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</div>
+</header>
+
+
+<section class="contact-section">
+
+<div class="contact-title">
+<h1>Contact Us</h1>
+<p>For showcase inquiries or product information.</p>
+</div>
+
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h3>Contact Information</h3>
+
+<p>📞 +421 911 098 008</p>
+<p>📍 Bratislavská 5236/49</p>
+<p>917 02 Trnava</p>
+<p>Slovakia</p>
+
+<p>✉ info@seveleurope.com</p>
+
+<div class="map">
+
+<iframe 
+src="https://www.google.com/maps?q=Bratislavská%205236/49%20Trnava%20Slovakia&output=embed"
+width="100%" 
+height="350" 
+style="border:0;" 
+allowfullscreen="" 
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+
+<div class="contact-form">
+
+<form id="contact-form">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<input type="text" name="phone" placeholder="Phone Number">
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-logo">
+
+<img src="images/sevel.png" alt="Sevel Europe">
+<p>Follow Us On Social Media</p>
+
+<div class="socials">
+<a href="#">Facebook</a>
+<a href="#">LinkedIn</a>
+<a href="#">Instagram</a>
+</div>
+
+</div>
+
+
+<div class="footer-column">
+
+<h3>Information</h3>
+
+<a href="#">About Us</a>
+<a href="products.html">Our Products</a>
+<a href="#">Why Sevel?</a>
+<a href="#">Contact</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<h3>Contact</h3>
+
+<p>📞 +421 911 098 008</p>
+<p>📍 Bratislavská 5236/49</p>
+<p>917 02 Trnava</p>
+<p>Slovakia</p>
+
+</div>
+
+
+<div class="footer-column">
+
+<h3>Stay Informed</h3>
+
+<p>Get updates about new showcases.</p>
+
+<div class="newsletter">
+<input type="email" placeholder="Enter your email">
+<button>→</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 Sevel Europe s.r.o. All Rights Reserved</p>
+</div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
